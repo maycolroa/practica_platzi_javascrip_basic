@@ -107,3 +107,13 @@ function calcular_area_triangulo(){
     const area = area_triangulo(h, b);
     alert(area);
 }
+
+//circulo
+
+function calcular_circunferencia(){
+    const input_radio = document.getElementById("input_radio");
+    const r = input_radio.value;
+    const diametro = diametro_circulo(r);
+    const circunferencia = circunferencia(diametro);
+    alert(circunferencia);
+}
