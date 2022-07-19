@@ -8,6 +8,71 @@
     <script src="./figuras1.js"></script>
 </head>
 <body>
-    <h1>figuras geometricas</h1>
+    <header>
+        <h1>figuras geometricas</h1>
+        <p>este es el primer taller de javascript practico </p>
+    </header>
+    <section>
+        <h2>calcula el area y perimetro de un cuadrado</h2>
+        <form>
+            <label for="input_cuadrado">
+                ingrese el valor del lado del cuadrado:
+            </label>
+            <input id="input_cuadrado" type="number">
+            <button type="button" onclick="calcular_perimetro_cuadrado()">
+                calcular perimetro
+            </button>
+            <button type="button" onclick="calcular_area_cuadrado()">
+                calcular area
+            </button>
+        </form>
+
+        <h2>calcula el area y perimetro de un triangulo</h2>
+        <form>
+
+            <div class="titulo_altura">
+                <label for="input_altura" class="altura">
+                    ingrese altura del triangulo:
+                </label>
+            </div>
+            <div class="container_altura">
+                <input id="input_altura" type="number" class="input_data_altura" placeholder=" ingrese valor">
+            </div>
+
+            <div class="titulo_base">
+                <label for="input_base" class="base">
+                    ingrese base del triangulo:
+                </label>
+            </div>
+            <div class="container_base">
+                <input id="input_base" type="number" class="input_data_base" placeholder=" ingrese valor">
+            </div>
+
+            <div class="titulo_lado_1">
+                <label for="input_lado_1" class="lado_1">
+                    ingrese el valor del lado 1:
+                </label>
+            </div>
+            <div class="container_lado_1">
+                <input id="input_lado_1" type="number" class="input_data_lado_1" placeholder=" ingrese valor">
+            </div>
+
+            <div class="titulo_lado_2">
+                <label for="input_lado_2" class="lado_2">
+                    ingrese el valor del lado 2:
+                </label>
+            </div>
+            <div class="container_lado_2">
+                <input id="input_lado_2" type="number" class="input_data_lado_2" placeholder=" ingrese valor">
+            </div>
+
+            <button type="button" onclick="calcular_perimetro_triangulo()">
+                calcular perimetro
+            </button>
+            <button type="button" onclick="calcular_area_triangulo()">
+                calcular area
+            </button>
+        </form>
+    </section>
 </body>
 </html>

@@ -54,8 +54,8 @@ function diametro_circulo(radio){
 }
 //console.log("el diametro del circulo mide: " + diametro_circulo + "cm, ");
 //pi
-const pi = Math.PI;
-console.log("pi mide: " + pi + "cm, ");
+//const pi = Math.PI;
+//console.log("pi mide: " + pi + "cm, ");
 //circunferencia
 function circunferencia(radio){
     const diametro = diametro_circulo(radio);
@@ -68,3 +68,42 @@ function area_circulo(radio){
 }
 //console.log("el area del circulo mide: " + area_circulo + "cm^2, ");
 console.groupEnd();
+
+// funciones del onclick html
+//cuadrado
+function calcular_perimetro_cuadrado(){
+    const input = document.getElementById("input_cuadrado");
+    const value = input.value;
+    const perimetro = perimetro_cuadrado(value);
+    alert(perimetro);
+}
+
+function calcular_area_cuadrado(){
+    const input = document.getElementById("input_cuadrado");
+    const value = input.value;
+    const area = area_cuadrado(value);
+    alert(area);
+}
+
+//triangulo
+
+function calcular_perimetro_triangulo(){
+
+    const input_base = document.getElementById("input_base");
+    const base = input_base.value;
+    const input_lado_1 = document.getElementById("input_lado_1");
+    const lado1 = input_lado_1.value;
+    const input_lado_2 = document.getElementById("input_lado_2");
+    const lado2 = input_lado_2.value;
+    const perimetro = perimetro_triangulo(lado1, lado2, base);
+    alert(perimetro);
+}
+
+function calcular_area_triangulo(){
+    const input_altuta = document.getElementById("input_altura");
+    const h = input_altuta.value;
+    const input_base = document.getElementById("input_base");
+    const b = input_base.value;
+    const area = area_triangulo(h, b);
+    alert(area);
+}
