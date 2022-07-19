@@ -90,11 +90,11 @@ function calcular_area_cuadrado(){
 function calcular_perimetro_triangulo(){
 
     const input_base = document.getElementById("input_base");
-    const base = input_base.value;
+    const base = parseInt(input_base.value);
     const input_lado_1 = document.getElementById("input_lado_1");
-    const lado1 = input_lado_1.value;
+    const lado1 = parseInt(input_lado_1.value);
     const input_lado_2 = document.getElementById("input_lado_2");
-    const lado2 = input_lado_2.value;
+    const lado2 = parseInt(input_lado_2.value);
     const perimetro = perimetro_triangulo(lado1, lado2, base);
     alert(perimetro);
 }
