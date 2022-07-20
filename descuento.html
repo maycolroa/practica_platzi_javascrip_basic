@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./descuento.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>porcentajes y descuentos</h1>
+        <p>este es el taller 2 practico de java-scrip</p>
+    </header>
+    <section>
+        <h2>calcula el precio a pagar de tus productos con descuento</h2>
+        <form>
+
+            <label for="input_price">escribe el precio de tu producto:</label>
+            <input type="number" id="input_price" >
+
+            <label for="input_discount">escribe el precio de tu descuento</label>
+            <input type="number" id="input_discount">
+
+            <button type="button" onclick="button_price_discount()">
+                calcular el precio con descuento
+            </button>
+            <p id="resul_precio"></p>
+        </form>
+
+    </section>
+</body>
+</html>
