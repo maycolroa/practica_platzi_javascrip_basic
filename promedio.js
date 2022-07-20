@@ -40,3 +40,38 @@ if (si_es_par(lista_1.length)){
 } else {
     mediana = lista_1[mitad_lista_1];
 }
+
+//moda
+
+ const lista_3 = [
+    1,
+    2,
+    3,
+    1,
+    2,
+    3,
+    4,
+    2,
+    2,
+    2,
+    1,
+];
+
+const lista_3_count = {};
+lista_3.map(
+    function (elemento){
+        if (lista_3_count[elemento]) {
+            lista_3_count[elemento] += 1;
+        } else {
+            lista_3_count[elemento] = 1;
+        } 
+    }
+);
+
+// ahora volvemos a convertir a lista_3_count en una array con la funccion object.entries
+
+const lista_3_array = Object.entries(lista_3_count).sort(
+    function (valor_acumulado, nuevo_valor){
+        valor_acumulado - nuevo_valor
+    }
+);
